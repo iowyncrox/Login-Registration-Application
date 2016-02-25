@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>UserName</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Website</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in userListVM.users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+    </tr>
+    </tbody>
+</table>

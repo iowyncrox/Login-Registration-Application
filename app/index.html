@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Registration Application</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="../app/app.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="wrapper" ng-app="myApp">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#/">
+                    Login Registration
+                </a>
+            </li>
+            <li>
+                <a href="#/login">Login</a>
+            </li>
+            <li>
+                <a href="#/user">User</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div ng-view>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!-- Angular Scripts -->
+<script src="https://code.angularjs.org/1.5.0/angular.js"></script>
+<script src="https://code.angularjs.org/1.5.0/angular-route.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+<script src="../app/app.js"></script>
+<script src="Home/Controller/HomeLogin.js"></script>
+<script src="Home/Controller/RegisterLogin.js"></script>
+<script src="Home/Controller/SuccessLogin.js"></script>
+<script src="User/Controller/UserView.js"></script>
+<script src="../app/User/Service/DataService.js"></script>
+<script src="../app/Home/Service/Authentication.js"></script>
+</body>
+</html>
